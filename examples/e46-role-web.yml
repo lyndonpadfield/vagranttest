@@ -1,0 +1,21 @@
+---
+
+# common
+- hosts: all
+#  sudo: yes
+  become: yes
+
+
+  gather_facts: no
+
+  roles:
+    - common
+
+# web
+- hosts: web
+#  sudo: yes
+  become: yes
+
+
+  roles:
+    - web
